@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Money Manager</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Money Manager</h1>
+      <p>Track your income and expenses easily</p>
+    </div>
+
+    <div class="balance-box">
+      <h2>Total Balance</h2>
+      <div class="balance" id="balance">₹0</div>
+    </div>
+
+    <div class="cards">
+      <div class="card income">
+        <h3>Income</h3>
+        <p id="income">₹0</p>
+      </div>
+
+      <div class="card expense">
+        <h3>Expense</h3>
+        <p id="expense">₹0</p>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <h2>Add Transaction</h2>
+
+      <input type="text" id="text" placeholder="Enter title">
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+
+    <div class="history">
+      <h2>Transaction History</h2>
+      <div id="transaction-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
